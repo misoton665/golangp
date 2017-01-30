@@ -1,5 +1,0 @@
-gom 'github.com/go-sql-driver/mysql', :commit => '2e00b5cd70399450106cec6431c2e2ce3cae5034'
-gom 'github.com/lib/pq', :commit => '8df6253d1317616f36b0c3740eb30c239a7372cb'
-gom 'github.com/mattn/go-sqlite3', :commit => 'eff6379ba09b2fca7aa8216f2132d4c170ed9d46'
-gom 'github.com/naoina/genmai', :commit => 'c00e6703a1503c09dca12048bf17961b13511c0f'
-gom 'github.com/naoina/go-stringutil', :commit => '6b638e95a32d0c1131db0e7fe83775cbea4a0d0b'
