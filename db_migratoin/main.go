@@ -2,37 +2,37 @@ package main
 
 import (
 	"fmt"
-	"time"
-	"github.com/naoina/genmai"
 	_ "github.com/go-sql-driver/mysql"
+	"github.com/naoina/genmai"
+	"time"
 )
 
 type (
 	CustomerPurchase struct {
-		Id				int64			`db:"pk"`
-		Name			string
-		ItemId		int64
-		ItemName	string
-		Price			int64
-		CreatedAt	time.Time
+		Id        int64 `db:"pk"`
+		Name      string
+		ItemId    int64
+		ItemName  string
+		Price     int64
+		CreatedAt time.Time
 	}
 
 	Customer struct {
-		Id int64 `db:"pk"`
+		Id   int64  `db:"pk"`
 		Name string `db:"unique"`
 	}
 
 	Item struct {
-		Id		int64 `db:"pk"`
+		Id    int64  `db:"pk"`
 		Name  string `db:"unique"`
 		Price int64
 	}
 
 	Purchase struct {
-		Id					int64 `db:"pk"`
-		CustomerId	int64
-		ItemId			int64
-		CreatedAt		time.Time
+		Id         int64 `db:"pk"`
+		CustomerId int64
+		ItemId     int64
+		CreatedAt  time.Time
 	}
 )
 
