@@ -8,6 +8,7 @@ import (
 )
 
 type (
+	// 旧テーブル（正規化前）
 	CustomerPurchase struct {
 		Id        int64 `db:"pk"`
 		Name      string
@@ -17,6 +18,7 @@ type (
 		CreatedAt time.Time
 	}
 
+	// 新テーブル（正規化後）
 	Customer struct {
 		Id   int64  `db:"pk"`
 		Name string `db:"unique"`
